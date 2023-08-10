@@ -1,0 +1,93 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    background-image: url(img/background1.jpg);
+    background-size: cover;
+    /* background-color: rgb(35, 220, 220); */
+}
+
+#game {
+    display: hidden;
+    margin: 1rem auto;
+    border-bottom: 2px solid rgb(56, 1, 51);
+    height: 500px;
+    width: 400px;
+    background: transparent;
+    /* background-image: url(img/background1.jpg);
+    background-color: rgb(61, 69, 76); */
+    overflow: hidden;
+}
+
+#block {
+    height: 500px;
+    width: 50px;
+    background-color: rgb(36, 29, 235);
+    position: relative;
+    top: 0;
+    left: 400px;
+    animation: block 2s linear infinite;
+}
+
+#hole {
+    height: 150px;
+    width: 50px;
+    background-color: yellow;
+    position: relative;
+    top: -500px;
+    left: 400px;
+    animation: block 2s linear infinite;
+}
+
+@keyframes block {
+    0% {
+        left: 400px;
+    }
+    100% {
+        left: -50px;
+    }
+}
+
+#bird {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    top: 100px;
+}
+
+#bird img {
+    width: 50px;
+    height: 50px;
+}
+
+#result {
+    height: 200px;
+    width: 500px;
+    background-color: rgb(2, 153, 172);
+    margin: 5rem auto;
+    border: 2px solid wheat;
+    border-radius: 20px;
+    display: none;
+    text-align: center;
+}
+
+#btn {
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 11px;
+    color: white;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin-top: 1rem;
+    background-color: saddlebrown;
+    cursor: pointer;
+}
+
+#text {
+    margin-top: 1rem;
+    font-size: 2rem;
+    color: seashell;
+}
